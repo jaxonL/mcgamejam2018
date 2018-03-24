@@ -1,8 +1,0 @@
-{
-	"files.exclude": {
-		"/home/robin/Dev/mcgamejam2018 4.19/.git": true,
-		"/home/robin/Dev/mcgamejam2018 4.19/.vscode": true,
-		"/home/robin/Dev/mcgamejam2018 4.19/Content": true,
-		"/home/robin/Dev/mcgamejam2018 4.19/Intermediate": true
-	}
-}
