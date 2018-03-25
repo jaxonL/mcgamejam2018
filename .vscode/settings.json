@@ -1,0 +1,10 @@
+{
+	"files.exclude": {
+		"/home/robin/Dev/Unreal/mcgamejam2018/.git": true,
+		"/home/robin/Dev/Unreal/mcgamejam2018/.vscode": true,
+		"/home/robin/Dev/Unreal/mcgamejam2018/Content": true,
+		"/home/robin/Dev/Unreal/mcgamejam2018/DerivedDataCache": true,
+		"/home/robin/Dev/Unreal/mcgamejam2018/Intermediate": true,
+		"/home/robin/Dev/Unreal/mcgamejam2018/Saved": true
+	}
+}

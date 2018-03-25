@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Survive Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Mac",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"IOS",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"HTML5",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"Linux",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"Shipping",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Survive TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "Survive TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Survive",
+				"TVOS",
+				"Test",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Linux",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Linux",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SurviveEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Linux",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Linux",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Linux",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SurviveEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Linux",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Linux",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Linux",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SurviveEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Linux",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Mac",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Mac",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SurviveEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Mac",
+				"Debug",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Mac",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Mac",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SurviveEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Mac",
+				"DebugGame",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Mac",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Mac",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SurviveEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		},
+		{
+			"label": "SurviveEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SurviveEditor",
+				"Mac",
+				"Development",
+				"/home/robin/Dev/Unreal/mcgamejam2018/Survive.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/robin/.UnrealEngine4"
+			}
+		}
+	]
+}
